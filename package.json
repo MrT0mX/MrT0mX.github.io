@@ -1,0 +1,11 @@
+{
+  "name": "mtxproject-vercel",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@vercel/schedules": "^0.0.3",
+    "mongodb": "^7.9.0"
+  }
+}

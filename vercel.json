@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "schedules": {
+    "service-monitor": {
+      "schedule": "*/10 * * * *",
+      "function": "api/monitor/check.mjs",
+      "timezone": "Asia/Dhaka"
+    }
+  },
+  "functions": {
+    "api/monitor/check.mjs": {
+      "maxDuration": 60,
+      "experimentalTriggers": [{ "type": "schedule/v1beta" }]
+    },
+    "api/status.json.js": {
+      "maxDuration": 20
+    },
+    "api/heartbeat/*.js": {
+      "maxDuration": 20
+    }
+  }
+}

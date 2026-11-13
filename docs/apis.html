@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Explore the MTXProject REST APIs, service links, source repositories, and verified health status.">
+  <title>API Directory — MTXProject</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="docs-page" id="top">
+  <header class="topbar">
+    <a class="brand" href="../#home" aria-label="MTXProject home"><span class="brand-mark">M<span>X</span></span><span>MTX<span class="brand-muted">PROJECT</span></span></a>
+    <nav aria-label="Main navigation"><a href="../">Home</a><a href="../#projects">Projects</a><a href="./">Docs</a><a href="../#status">Status</a></nav>
+  </header>
+  <main class="docs-wrap">
+    <div class="section-kicker">MTXPROJECT / API DIRECTORY</div>
+    <h1>APIs built<br>to <span class="gradient-text">be useful.</span></h1>
+    <p class="docs-lede">Live service links and source documentation for the deployed MTXProject APIs. Availability comes from real health checks; this page does not assume a service is online because its homepage loads.</p>
+    <div class="docs-layout">
+      <aside class="docs-toc"><span>ON THIS PAGE</span><a href="#better-api">Better-Api</a><a href="#mtxallapi">MTXALLAPI</a><a href="#status-policy">Status policy</a></aside>
+      <div class="docs-content">
+        <section id="better-api">
+          <div class="docs-label">01 / WEB API + APP</div>
+          <h2>Better-Api</h2>
+          <p>REST API and web application with account features, a guest effects preview, and API documentation. The account documentation route requires login. The public health route includes database readiness.</p>
+          <div class="docs-cards">
+            <article><h3>Open service</h3><p><a class="docs-link" href="https://better-api-eta.vercel.app/" target="_blank" rel="noreferrer">better-api-eta.vercel.app ↗</a></p></article>
+            <article><h3>Health endpoint</h3><p><a class="docs-link" href="https://better-api-eta.vercel.app/healthz" target="_blank" rel="noreferrer">/healthz · database readiness ↗</a></p></article>
+            <article><h3>Source &amp; guide</h3><p><a class="docs-link" href="https://github.com/MrT0mX/Better-Api" target="_blank" rel="noreferrer">Repository and setup guide ↗</a></p></article>
+          </div>
+        </section>
+        <section id="mtxallapi">
+          <div class="docs-label">02 / REST API + ACCOUNT SYSTEM</div>
+          <h2>MTXALLAPI</h2>
+          <p>REST API and account system with downloader, text effects, search, games, maker, link-shortening, information, tools, and Islamic content routes. Check the repository documentation for the supported request formats and current route list.</p>
+          <div class="docs-cards">
+            <article><h3>Open service</h3><p><a class="docs-link" href="https://mtxallapi.onrender.com/" target="_blank" rel="noreferrer">mtxallapi.onrender.com ↗</a></p></article>
+            <article><h3>Source &amp; route guide</h3><p><a class="docs-link" href="https://github.com/MrT0mX/MTXALLAPI" target="_blank" rel="noreferrer">Repository and API overview ↗</a></p></article>
+            <article><h3>Health route</h3><p>The deployed service must expose a database-ready `/healthz` response before monitoring can verify it.</p></article>
+          </div>
+        </section>
+        <section id="status-policy">
+          <div class="docs-label">03 / VERIFIED AVAILABILITY</div>
+          <h2>Health before green</h2>
+          <p>The service status page only shows green LIVE after a recent successful health check. A database connection failure is DEGRADED; a missing or unreachable health route cannot be called healthy. See the <a class="docs-link" href="../#status">service status board ↗</a> for verified results once monitoring is configured.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><a class="brand" href="../#home"><span class="brand-mark">M<span>X</span></span><span>MTX<span class="brand-muted">PROJECT</span></span></a><span>© <span id="year"></span> MTXProject</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  <script>document.querySelector('#year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
