@@ -1,0 +1,9 @@
+{
+  "updatedAt": null,
+  "services": {
+    "MTXProject Website": {"state": "unknown", "checkedAt": null},
+    "Better-Api": {"state": "unknown", "checkedAt": null},
+    "MTXALLAPI": {"state": "unknown", "checkedAt": null},
+    "Messenger Bot": {"state": "unknown", "checkedAt": null}
+  }
+}

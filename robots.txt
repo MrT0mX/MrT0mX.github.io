@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mrt0mx.github.io/sitemap.xml

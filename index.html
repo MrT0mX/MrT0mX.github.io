@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description" content="MTXProject — the developer hub of Ratul Hassan (MrT0mX), featuring APIs, Messenger bots, libraries and tools.">
+  <title>MTXProject — Build beyond the ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="MTXProject home"><span class="brand-mark">M<span>X</span></span><span>MTX<span class="brand-muted">PROJECT</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#command-store">Command Store</a><a href="docs/">Docs</a><a href="#status">Status</a><a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> DEVELOPER HUB <span class="eyebrow-line"></span> OPEN SOURCE</div>
+        <h1>Building tools<br>for the <span class="gradient-text">next layer.</span></h1>
+        <p class="hero-lede">I'm Ratul Hassan — known online as <strong>MrT0mX</strong>. I build JavaScript projects, APIs, and Messenger bot tools that solve practical problems.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore the work <span>↘</span></a><a class="button button-quiet" href="https://github.com/MrT0mX" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a></div>
+        <div class="hero-meta"><span><i class="meta-square"></i> Open source projects</span><span><i class="meta-square meta-square-blue"></i> JavaScript · APIs · Bots</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract orbital illustration" role="img">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="orbit-core"><span>MTX</span><small>SYS / 01</small></div>
+        <div class="orbit-node node-a">API</div><div class="orbit-node node-b">JS</div><div class="orbit-node node-c">BOT</div>
+        <div class="art-coordinates">BUILD<br>ITERATE<br>SHARE</div><div class="art-caption">INDEPENDENT<br>BY DESIGN</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      <div class="hero-index">01 <span>/</span> 05</div>
+    </section>
+
+    <section class="about section-wrap section-pad" id="about">
+      <div class="section-heading"><div class="section-kicker">01 / THE BUILDER</div><h2>Curiosity, turned<br>into <span class="gradient-text">working code.</span></h2></div>
+      <div class="about-body"><p class="large-copy">I’m <strong>Ratul Hassan</strong>, also known as <strong>MrT0mX</strong>. I make JavaScript projects, APIs, and Messenger bot tools, then share them as open source.</p><p class="muted-copy">This is the home base for a growing collection of practical experiments: from bot frameworks and API services to libraries, command collections, and developer utilities.</p><a class="text-link" href="https://github.com/MrT0mX" target="_blank" rel="noreferrer">More about my work <span>↗</span></a></div>
+      <div class="principles"><article><span class="principle-no">01</span><h3>Useful first</h3><p>Build for real use cases and clear outcomes.</p></article><article><span class="principle-no">02</span><h3>Open by default</h3><p>Share code, learn in public, credit the work.</p></article><article><span class="principle-no">03</span><h3>Keep exploring</h3><p>Stay curious, iterate, and make the next version better.</p></article></div>
+    </section>
+
+    <section class="work-section section-pad" id="projects">
+      <div class="section-wrap">
+        <div class="projects-head"><div><div class="section-kicker">02 / SELECTED WORK</div><h2>Projects in<br><span class="gradient-text">the ecosystem.</span></h2></div><p class="muted-copy projects-intro">A selection of repositories across bots, APIs, libraries, plugins, and tools. Browse the full public portfolio on GitHub.</p></div>
+        <div class="filter-row" role="group" aria-label="Filter projects"><button class="filter-chip active" data-filter="all" aria-pressed="true">All work <span>14</span></button><button class="filter-chip" data-filter="bots" aria-pressed="false">Bots</button><button class="filter-chip" data-filter="api" aria-pressed="false">APIs</button><button class="filter-chip" data-filter="libraries" aria-pressed="false">Libraries</button><button class="filter-chip" data-filter="tools" aria-pressed="false">Tools &amp; plugins</button></div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <div class="projects-footer"><span>Showing selected public repositories</span><a class="text-link" href="https://github.com/MrT0mX?tab=repositories" target="_blank" rel="noreferrer">View all on GitHub <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="command-section section-pad" id="command-store">
+      <div class="section-wrap command-panel"><div class="command-orb" aria-hidden="true"><span>⌘</span><i></i><i></i><i></i></div><div class="command-copy"><div class="section-kicker">03 / COMMAND STORE</div><h2>Ideas, ready<br>to <span class="gradient-text">run.</span></h2><p>A dedicated home for MTXProject commands is planned as its own destination, separate from the All-Commands repository. The store link will appear here once its address is connected.</p><div class="command-actions"><span class="status-tag status-neutral"><i></i> LINK NOT CONNECTED</span><a class="text-link" href="https://github.com/MrT0mX/All-Commands" target="_blank" rel="noreferrer">Explore All-Commands repo <span>↗</span></a></div></div><div class="command-side-note">COMMANDS / MODULES / COMMUNITY</div></div>
+    </section>
+
+    <section class="status-section section-pad" id="status">
+      <div class="section-wrap"><div class="projects-head"><div><div class="section-kicker">04 / SERVICE STATUS</div><h2>Proof before<br><span class="gradient-text">green.</span></h2></div><p class="muted-copy projects-intro">Service labels come from recent, verified health checks. Until a monitor is connected, status stays unverified — never guessed from a homepage or process.</p></div>
+        <div class="status-board"><div class="status-board-head"><span>MONITORED SERVICES</span><span id="status-updated">LAST CHECK · NOT AVAILABLE</span></div><div id="service-list"></div><div class="status-legend"><span><i class="legend-dot live"></i> LIVE · verified healthy</span><span><i class="legend-dot degraded"></i> DEGRADED · partial response</span><span><i class="legend-dot unknown"></i> UNKNOWN · no verified check</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact"><div class="section-wrap contact-inner"><div><div class="section-kicker">05 / GET IN TOUCH</div><h2>Let's make<br>something <span class="gradient-text">useful.</span></h2></div><div class="contact-right"><p>Have an idea, question, or collaboration in mind? Find me through the links below.</p><a class="contact-email" href="mailto:mtxproject@proton.me">mtxproject@proton.me <span>↗</span></a><div class="social-links"><a href="https://github.com/MrT0mX" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="mailto:mtxproject@proton.me">Email <span>↗</span></a></div></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">M<span>X</span></span><span>MTX<span class="brand-muted">PROJECT</span></span></a><span>© <span id="year"></span> MTXProject · Built for the curious.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+</body>
+</html>

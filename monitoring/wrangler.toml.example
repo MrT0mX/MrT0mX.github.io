@@ -1,0 +1,19 @@
+name = "mtxproject-monitor"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mtxproject-monitor"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[vars]
+SITE_URL = "https://mrt0mx.github.io"
+SITE_ORIGIN = "https://mrt0mx.github.io"
+BETTER_API_HEALTH_URL = ""
+MTXALLAPI_HEALTH_URL = ""
+# Add service health URLs only after database-aware health checks are confirmed.
